@@ -63,8 +63,8 @@ module.exports = {
             default: 0,
             31337: 0,
         },
-        users: {
-            default: 0,
+        player: {
+            default: 1,
         },
     },
     mocha: {
