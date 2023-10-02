@@ -1,11 +1,9 @@
-const frontEndContractsFile =
-    "../nft-marketplace-thegraph/constants/networkMapping.json"
-const frontEndAbiLocation = "../nft-marketplace-thegraph/constants/"
-
 const fs = require("fs")
 const { network, ethers } = require("hardhat")
 require("dotenv").config()
-
+const frontEndContractsFile =
+    "../nft-marketplace-thegraph/constants/networkMapping.json"
+const frontEndAbiLocation = "../nft-marketplace-thegraph/constants/"
 module.exports = async function () {
     if (process.env.UPDATE_FRONT_END) {
         console.log("Writing to front end...")
